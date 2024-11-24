@@ -1,0 +1,167 @@
+.sattlementreport-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .sattlement-report {
+    /* background-color: whitesmoke; */
+    border-radius: 8px;
+    padding: 20px;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
+  }
+  
+  .sattlement-report h1 {
+    font-family: "Franklin Gothic Medium", Arial, sans-serif;
+    text-align: center;
+    color: gray;
+    margin-bottom: 15px;
+    font-size: 25px;
+  }
+  
+  .settlement-form {
+    width: 100%;
+  }
+  
+  .sattlement-report-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .sattlement-report-input {
+    flex: 1;
+  }
+  
+  .sattlement-report-input label {
+    font-family: "Arial Narrow", Arial, sans-serif;
+    color: gray;
+    font-size: 15px;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  .sattlement-input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: gray;
+  }
+  
+  .sattlement-input:focus {
+    outline: none;
+    border-color: #f59e0b;
+  }
+  
+  .sattlement-button {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .sattlement-btn-submit,
+  .sattlement-btn-reset,
+  .sattlement-btn-excel {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
+  }
+  
+  .sattlement-btn-submit {
+    background-color: #f59e0b;
+    color: white;
+  }
+  
+  .sattlement-btn-submit:hover {
+    box-shadow: 0 6px 8px rgba(247, 64, 9, 0.3); 
+  }
+  
+  .sattlement-btn-reset {
+    background-color: rgb(235, 31, 31);
+    color: white;
+  }
+  
+  .sattlement-btn-reset:hover {
+    box-shadow: 0 6px 8px rgba(247, 64, 9, 0.3); 
+  }
+  
+  .sattlement-btn-excel {
+    background-color: green;
+    color: white;
+  }
+  
+  .sattlement-btn-excel:hover {
+    box-shadow: 0 6px 8px rgba(247, 64, 9, 0.3); 
+  }
+  
+
+/* Tablet and small desktops */
+@media (max-width: 1024px) {
+    .sattlement-report {
+      width: 90%;
+    }
+  
+    .sattlement-report-row {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .sattlement-button {
+      gap: 10px;
+    }
+  
+    .sattlement-btn-submit,
+    .sattlement-btn-reset,
+    .sattlement-btn-excel {
+      font-size: 14px;
+      padding: 8px 15px;
+    }
+  }
+  
+  /* Mobile screens */
+  @media (max-width: 480px) {
+    .sattlement-report {
+      width: 95%;
+      margin-top: 100px;
+      padding: 15px;
+    }
+  
+    .sattlement-report h1 {
+      font-size: 20px;
+    }
+  
+    .sattlement-report-row {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .sattlement-input {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    .sattlement-button {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .sattlement-btn-submit,
+    .sattlement-btn-reset,
+    .sattlement-btn-excel {
+      font-size: 14px;
+      padding: 10px;
+      width: 80%;
+    }
+  }

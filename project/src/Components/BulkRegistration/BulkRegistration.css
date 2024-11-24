@@ -1,0 +1,164 @@
+.bulk-container{
+    box-shadow: 0 4px 24px #22292f1a;
+      width: 98%;
+
+}
+
+.bulk-main-conatainer{
+    box-shadow: 0 4px 24px #22292f1a;
+      height: 300px;
+      
+}
+.csv-img-conatainer{
+    text-align: end;
+}
+.csv-image{
+    width: 15%;
+    height: 15%;
+}
+.csv-input {
+    box-shadow: 0 4px 24px #22292f1a;
+    width: 96%; /* Adjust the width as needed to fit the screen */
+    height: auto;
+    border: dotted;
+    text-align: center;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin: 0 auto; /* Center the entire .csv-input container */
+    height: 40%;
+    border-color: gray;
+}
+
+.csvinput {
+    width: 100%; /* Make input take the full width of the container */
+    max-width: 400px; /* Optional: Set a max width for better control */
+}
+
+
+  
+  .custom-file-upload {
+    color: tomato;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  
+  
+  .file-name {
+    font-size: 14px;
+    color:gray;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
+    position: absolute;margin-top: 30px;
+  }
+  
+  
+#csv-btn {
+    display: flex;
+    margin-top: 20px;
+}
+
+#csv-btn .row {
+    width: 100%;
+    justify-content: center; /* Center the columns within the row */
+}
+
+#csv-btn .col-md-4 {
+    display: flex;
+    justify-content: center; 
+}
+
+.export-btn, .Upload-btn {
+    border: none;
+    border-radius: 5px;
+    background-color: #fc7f37;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    padding: 10px 20px;
+    width: 100%;
+    max-width: 150px; /* Set a max-width for uniform button sizing */
+    cursor: pointer;
+    text-align: center;
+}
+.remove-btn{
+    border: none;
+    border-radius: 5px;
+    background-color:#ea5455;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    padding: 10px 20px;
+    width: 100%;
+    max-width: 150px; /* Set a max-width for uniform button sizing */
+    cursor: pointer;
+    text-align: center;
+}
+
+.export-btn:hover, .Upload-btn:hover, .remove-btn:hover {
+    box-shadow: 0 6px 8px rgba(247, 64, 9, 0.3);
+
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 780px) {
+    .bulk-main-conatainer{
+        box-shadow: 0 4px 24px #22292f1a;
+          height: 500px;
+    }
+    .csv-img-container {
+        text-align: center; /* Center images on smaller screens */
+    }
+
+    .csv-image {
+        width: 25%; /* Make images slightly larger for better visibility */
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    .csv-input {
+        width: 95%;
+        margin-left: auto;
+        padding: 10px;
+    }
+
+    .export-btn,
+    .Upload-btn,
+    .remove-btn {
+        width: 80%; /* Increase button width for smaller screens */
+        max-width: 250px;
+        margin: 10px auto; /* Center-align the buttons */
+    }
+}
+
+/* Extra small screens (up to 480px) */
+@media (max-width: 480px) {
+    .bulk-main-conatainer{
+        box-shadow: 0 4px 24px #22292f1a;
+          height: 500px;
+    }
+    .csv-input {
+        flex-direction: column;
+        padding: 5px;
+        width: 95%;
+        height: 30%;
+    }
+
+    .csv-image {
+        width: 35%;
+        margin-bottom: 10px;
+    }
+
+    .export-btn,
+    .Upload-btn,
+    .remove-btn {
+        width: 90%;
+        max-width: 300px;
+        font-size: 14px;
+        padding: 8px;
+        margin: 8px auto;
+    }
+}
+

@@ -1,0 +1,132 @@
+/* Container styles */
+.forgot-password-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f9fafb;
+   
+  
+  }
+  
+  /* Card styling */
+  /* .forgot-password-card {
+    background: #ffffff;
+    color: var(--bs-card-color);
+    width: 400px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    
+  } */
+  .forgot-password-card {
+    background-color: rgba(255, 255, 255, 0.9); /* Light background with some transparency */
+    padding: 2rem;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Logo styling */
+  .logo {
+    width: 130px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+  }
+  
+  /* Title and subtitle styling */
+  .heading {
+    color: #6E6B7B;
+    margin-bottom: 20px;
+    text-align: start; 
+    font-size: 17px;   
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+  
+  .paragraph {
+    color: #6E6B7B;
+    margin-bottom: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0px 0px 21px 0px;
+    text-align: start;
+    letter-spacing: 1px;
+  }
+  
+  /* Form styles */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    text-align: left;
+    font-size: 11px;
+    color: #333;
+    margin-bottom: 5px;
+    color: #5E5873;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0px 0px 3px 0px;
+  }
+  
+  .emailforget{
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #d8d6de; /* Border color matching button */
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .emailforget:focus {
+    outline: none;
+    border-color: #f59e0b;
+    box-shadow: 0 0 8px rgba(245, 158, 11, 0.3); /* Smooth box shadow */
+  }
+  
+  /* Button styles */
+  .reset-button {
+    background-color: #FC7F37;
+    color: #FFFFFF;
+    padding: 8px 21px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    letter-spacing: 1px;
+
+  }
+  
+  .reset-button:hover {
+    box-shadow: 0 6px 8px rgba(247, 64, 9, 0.3); 
+  }
+  
+  /* Back to login link */
+  .back-to-login {
+    display: inline-block;
+    margin-top: 20px;
+    color:#FC7F37 ;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .back-to-login:hover {
+    text-decoration: none ;
+    color: #FC7F37;
+
+  }
+  .back-icon{
+   color: #FC7F37;
+  margin: 0px 2px 1px 0px;
+
+
+  }
+  

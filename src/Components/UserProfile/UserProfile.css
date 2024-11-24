@@ -1,0 +1,141 @@
+
+
+.profile-image {
+  background-color:whitesmoke ;
+  text-align: end;
+  position: fixed;
+  border: 1px;  
+  border-radius: 5px;
+  width: 77%;
+}
+
+
+
+.profile-picture-thumbnail {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  margin: 10px;
+}
+
+/* .profile-picture-thumbnail:hover {
+  transform: scale(1.1);
+} */
+
+/* Slider with smooth transition */
+.slider {
+  position: absolute;
+  top: calc(100% + 8px); /* Positioning the slider just below the image */
+  right: 20px;
+  width: 158px;
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  /* padding: 15px; */
+  border-radius: 8px;
+  z-index: 100;
+  /* Hidden state */
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+/* Visible state for the slider */
+.slider-open {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.slider-content {
+  text-align: center;
+}
+
+.slider-link{
+  list-style-type: none;
+  padding: 0px;
+}
+.sliderlink{
+  text-align: start;
+  margin: 15px;
+}
+
+.profile-link{
+  text-decoration: none;
+  color: gray;
+  align-items: start;
+  text-align: start;
+}
+
+.sliderlink,.profile-link:hover{
+   color: #f59e0b;
+}
+.profile-link{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.settingicon,.addusericon,.useractiviityicon,.logouticon{
+  font-size: 20px;
+  margin-right: 10px;
+  margin-bottom : 4px;
+
+}
+
+@media (max-width: 1115px) {
+  .profile-image {
+    background-color:whitesmoke ;
+    text-align: end;
+    position: fixed;
+    border: 1px;  
+    border-radius: 5px;
+    width: 72%;
+  }
+  
+}
+@media (max-width: 1050px) {
+  .profile-image {
+    background-color:whitesmoke ;
+    text-align: end;
+    position: fixed;
+    border: 1px;  
+    border-radius: 5px;
+    width: 69%;
+  }
+  
+}
+@media (max-width: 900px) {
+  .profile-image {
+    background-color:whitesmoke ;
+    text-align: end;
+    position: fixed;
+    border: 1px;  
+    border-radius: 5px;
+    width: 65%;
+  }
+  
+}
+@media (max-width: 800px) {
+  .profile-image {
+    background-color:whitesmoke ;
+    text-align: end;
+    position: fixed;
+    border: 1px;  
+    border-radius: 5px;
+    width: 60%;
+  }
+  
+}
+
+/* Responsive styles */
+@media (max-width: 786px) {
+  .profile-image {
+    background-color:whitesmoke ;
+    text-align: end;
+    position: fixed;
+    border: 1px;  
+    border-radius: 5px;
+    width: 95%;
+  }
+
+}
+

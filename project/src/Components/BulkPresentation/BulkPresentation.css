@@ -1,0 +1,175 @@
+.bulkpresentation-container {
+    transform: translateY(15px);
+    padding-right: 15px;
+    
+}
+
+#bulk-presentation {
+    width: 96%;
+    /* max-width: 800px; */
+    margin-top: 50px;
+    margin-left: 20px; 
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+
+}
+
+.bulkpresentation-heading {
+    font-size: 1.285rem;
+    font-weight: 500;
+    color:gray;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#bulkpresentation {
+    flex: 1 1 calc(33.333% - 20px); /* Flex each input to take up one-third of the row */
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+#bulkpresentation label {
+    font-size: 16px;
+    color: gray;
+    margin-bottom: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.bulkpresentation-input {
+    padding: 10px;
+    font-size: 15px;
+    color:gray;
+    border: 1px solid gray;
+    border-radius: 5px ;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.bulkpresentation-input:focus {
+    border-color:  #f59e0b;
+}
+
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.bulkpresentation-submit-btn,
+.bulkpresentation-reset-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    flex: 1 1 45%; /* Make buttons responsive and equal width */
+}
+
+.bulkpresentation-submit-btn {
+    background-color: #fc7f37;
+}
+
+.bulkpresentation-submit-btn:hover {
+    box-shadow: 0 6px 8px rgba(247, 64, 9, 0.3);
+}
+
+.bulkpresentation-reset-btn {
+    background-color: #ea5455;
+}
+
+.bulkpresentation-reset-btn:hover {
+    box-shadow: 0 6px 8px rgba(247, 64, 9, 0.3);
+}
+
+
+
+.bulkpresentation-submit-btn:disabled {
+    background-color: #ccc; /* Disabled button color */
+    color: #666; /* Lighter text color for disabled button */
+    cursor: auto;
+  }
+  
+  .bulkpresentation-reset-btn:disabled {
+    background-color: #ccc; /* Disabled button color */
+    color: #666; /* Lighter text color for disabled button */
+    cursor: auto;
+  }
+  
+/* Responsive adjustments */
+@media (max-width: 890px) {
+    #bulk-presentation {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    #bulkpresentation {
+        width: 100%;
+    }
+
+    .btn-container {
+        flex-direction: column;
+    }
+
+    .bulkpresentation-submit-btn,
+    .bulkpresentation-reset-btn {
+        width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    #bulk-presentation {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    #bulkpresentation {
+        width: 100%;
+    }
+
+    .btn-container {
+        flex-direction: column;
+    }
+
+    .bulkpresentation-submit-btn,
+    .bulkpresentation-reset-btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .bulkpresentation-heading {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .bulkpresentation-input {
+        padding: 8px;
+        font-size: 13px;
+    }
+
+    .bulkpresentation-submit-btn,
+    .bulkpresentation-reset-btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}

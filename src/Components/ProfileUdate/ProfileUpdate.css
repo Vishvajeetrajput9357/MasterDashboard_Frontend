@@ -1,0 +1,212 @@
+
+
+.profileupdate-container{
+width: 100%;
+padding: 20px;
+}
+
+.profileupdate-link{
+    text-align: center;
+    padding-top: 20px;
+    text-decoration: none;
+  }
+  
+
+  .profileupdate-link a{
+    text-decoration: none;
+    list-style: none;
+    color:gray;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+     letter-spacing: 1px;
+     margin-left:30px ;
+  }
+  .profileupdate-link ul li a.active-link{
+    color: #f59e0b;
+
+}
+  
+.profileupdate-link ul li a.active-link {
+    color: #f59e0b; 
+    border-color: #f59e0b;    
+    padding-bottom: 5px;
+    font-weight: 900;
+  }
+  
+
+  li::marker {
+    content: none;
+  }
+
+  .update-form{
+    background-color: whitesmoke;
+    border-radius: 10px;
+    width: 95%;
+    height: 600px;
+    margin-left: 2%;
+    margin-top: 50px;
+  }
+  .update-form h1{
+       font-size: 25px;
+       color: gray;
+       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+       text-align: center;
+       margin-top: 30px;
+  }
+  .update{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Default two columns */
+    gap: 5px;
+    background-color: whitesmoke;
+  }
+  .updateform{
+     margin-top: 15px;
+  }
+  .updateform label{
+    margin-left: 10px;
+  }
+  .updateinput{
+    width: 95%;
+    margin-left: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 7px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+  }
+  .updateinput:focus{
+    outline: none;
+    border-color: #f59e0b;
+  }
+  
+
+.updateimg{
+    width: 95%;
+    height: 150px;
+    border: 1px dotted;
+    border-radius: 5px;
+    /* margin-bottom: 20px; */
+    margin: 10px;
+    margin-left: 2.5%;
+}
+
+
+
+.select-logo-btn {
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    color: gray;
+     text-align: center;
+     letter-spacing: 1px;
+     margin-top: 25px;
+  }
+  .imglogo{
+    cursor: pointer;
+  display: block;
+  margin: auto;
+  width: 200px;
+  height: 100px;
+  color: black;
+  }
+  .profile-preview {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+    padding-top: 10px;
+  }
+  
+  #profilePicture{
+    margin-top: 20px;
+  }
+  .save-btn {
+    margin-top: 20px;
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 20%;
+    display: block;
+    margin: auto;
+  }
+  .remove-btn{
+    margin-top: 20px;
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 30%;
+    display: block;
+    margin: auto;
+  }
+  
+  .enquire-continer{
+    text-align: center;
+  }
+  .enquire-continer h1{
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+  .email-icon{
+    width: 30px;
+    height: 20px;
+    color: gray;
+    margin-bottom: 5px;
+  }
+  .telephone-icon{
+    color: gray;
+    width: 30px;
+    height: 18px;
+    margin-bottom: 5px;
+  }
+
+
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 90%;
+  }
+  
+  .confirm-btn,
+  .cancel-btn {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .confirm-btn {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .cancel-btn {
+    background-color: #f44336;
+    color: white;
+  }
+  

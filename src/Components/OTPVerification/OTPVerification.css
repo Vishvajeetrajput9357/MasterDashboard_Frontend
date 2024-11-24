@@ -1,0 +1,142 @@
+/* OTP Verification Container */
+.otp-verification {
+    margin-top: 20px;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 20px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    height: auto;
+    text-align: center;
+    box-shadow: 0 6px 8px rgba(247, 64, 9, 0.3);
+  }
+  
+  /* Heading Styling */
+  .otpheading {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #f59e0b;
+    text-align: center;
+  }
+  
+  /* Paragraph Styling */
+  .otppara {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #706e6e;
+  }
+  
+  /* OTP Input Boxes */
+  .optverifications {
+    margin: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 5px;
+    color: #6b6b6b;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: smaller;
+    font-weight: 800;
+    width: 15%;
+    text-align: center;
+  }
+  
+  .optverifications:focus {
+    outline: none;
+    border-color: #f59e0b;
+  }
+  
+  /* Button Styling */
+  .otpbtn {
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 5px;
+    width: 40%;
+    background-color: rgb(252, 121, 73);
+    color: #fff;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    
+  }
+  
+  .otpbtn:hover {
+    box-shadow: 0 6px 8px rgba(247, 64, 9, 0.3);
+  }
+  
+  /* Error Message Styling */
+  .error-message {
+    color: red;
+    margin: auto;
+    padding: auto;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+  }
+  .success-message {
+    color: green;
+    margin: auto;
+    padding: auto;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .otp-verification {
+      width: 60%;
+      padding: 15px;
+    }
+    
+    .otpheading {
+      font-size: 24px;
+    }
+    
+    .otppara {
+      font-size: 14px;
+    }
+    
+    .optverifications {
+      width: 18%;
+    }
+    
+    .otpbtn {
+      width: 50%;
+      font-size: 13px;
+      padding: 8px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .otp-verification {
+      width: 80%;
+      padding: 10px;
+    }
+  
+    .otpheading {
+      font-size: 20px;
+    }
+  
+    .otppara {
+      font-size: 13px;
+    }
+  
+    .optverifications {
+      width: 20%;
+    }
+  
+    .otpbtn {
+      width: 60%;
+      font-size: 12px;
+      padding: 7px;
+    }
+  }
+  

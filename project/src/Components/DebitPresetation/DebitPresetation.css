@@ -1,0 +1,367 @@
+
+
+.sidebar {
+  position: fixed;
+  width: 250px;
+  height: 100vh;
+  background-color: white;
+  color: #333;
+  padding-top: 20px;
+  z-index: 1;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.DebitPresetation-container{
+    padding: 10px;
+    }
+    
+  .DebitPresetation-main-container{
+      display: grid;
+      grid-template-columns: 1fr 1fr; /* Default two columns */
+      gap: 5px;
+  }
+  
+  /*img and link style*/
+  .DebitPresetation{
+      text-align: center;
+      margin-top: 90px;
+      text-decoration: none;
+    }
+  
+    .DebitPresetation a{
+      text-decoration: none;
+      list-style: none;
+      color:gray;
+      font-size: 15px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-weight: 600;
+       letter-spacing: 1px;
+       margin-left:30px ;
+    }
+    .DebitPresetation ul li a.active-link{
+      color: #f59e0b;
+  
+  }
+    
+  .DebitPresetation ul li a.active-link {
+      color: #f59e0b; 
+      border-color: #f59e0b;    
+      padding-bottom: 5px;
+      font-weight: 900;
+    }
+    
+  
+    li::marker {
+      content: none;
+    }
+  
+    /*form style*/
+  
+    .mandateregistrationformheading h1{
+      text-align: center;
+      width: 100%;
+      color: gray;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 30px;
+      margin-top: 40px;
+    }
+  .DebitPresetationform{
+      border: 1px;
+      border-radius: 5px;
+      box-shadow: 0 4px 24px #22292f1a;
+      width: 80%;
+      margin: 0 auto;
+      background-color: white;
+    }
+  
+  
+  .DebitPresetation-input-container{ 
+      padding: 10px;
+      color: white;
+      margin-left: 2px;
+        
+  }
+  .DebitPresetation-input-container label{
+      letter-spacing: 1px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 13px;
+  }
+  .DebitPresetationinput{
+      width: 100%;
+      border: 1px solid;
+      border-radius: 2px;
+      color: gray;
+      border-radius: 5px;
+      padding: 5px;
+  }
+  
+  /*checkbox style */
+  
+  
+  /* .check-box{
+    display: flex;
+    gap: 1rem;
+  }
+  .checkboxinput{
+    
+  } */
+  
+  /*select option style*/
+  /* .optionselectinput{
+    width: 100%;
+    border-color: gray;
+    border-radius: 5px;
+    padding: 7px;
+    border: 1px solid;
+  }
+  .optionselectinput,.optionselect{
+    color: gray;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px ;
+  }
+  
+   */
+  /*start date and endate style*/
+  .Settlementdate{
+    color: gray;
+    font-size: 14px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
+    padding: 6px;
+    border: 1px solid;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  /*next btn style*/
+  
+  .btn-container{
+    text-align: center;
+  }
+  .next-btn{
+  width: 8%;
+  border: none;
+  border-radius: 5px;
+  background-color: #fc7f37!important;
+  padding: 5px;
+  margin: 5px;
+  position: relative;
+  
+  }
+  .next-btn,.reset-btn:hover{
+    box-shadow: 0 6px 8px rgba(247, 64, 9, 0.3); 
+  
+  }
+  
+  .reset-btn{
+    width: 8%;
+    border: none;
+    border-radius: 5px;
+    background-color: #ea5455!important;
+    padding: 5px;
+    margin: 5px;
+    position: relative;
+    }
+    /*
+    scroll-top-container
+    */
+    .scroll-top-container{
+      text-align: end;
+  
+    }
+    .scroll-top-btn{
+      border: none;
+      border-radius: 5px;
+      background-color: #fc7f37!important;
+      width: 40px;
+      height: 40px;
+      
+    }
+  .scroll-icon{
+    color: white;
+  }
+  
+  
+  
+  
+  @media (max-width: 768px) {
+    .DebitPresetation-main-container{
+      display: grid;
+      grid-template-columns: 1fr; /* Default two columns */
+      gap: 5px;
+  }
+  
+    .mandate-main-container {
+      grid-template-columns: 1fr; /* Switch to single column on smaller screens */
+    }
+  }
+  
+  .mandateregistration {
+    text-align: center;
+    margin: 20px;
+    text-decoration: none;
+  }
+  
+  .mandateregistration a {
+    text-decoration: none;
+    list-style: none;
+    color: gray;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-left: 15px;
+  }
+  
+  .mandateregistration ul li a.active-link {
+    color: #f59e0b;
+    padding-bottom: 5px;
+    font-weight: 900;
+  }
+  
+  .mandateregistrationform {
+    border-radius: 5px;
+    box-shadow: 0 4px 24px #22292f1a;
+    width: 90%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+  }
+  
+  .mandateregistrationformheading h1 {
+    text-align: center;
+    color: gray;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  
+  .mandate-input-container {
+    padding: 10px;
+    color: white;
+   
+  }
+  
+  .mandate-input-container label {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 13px;
+  }
+  
+  .mandateinput {
+    width: 100%;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 5px;
+    color: gray;
+  }
+  
+  /* Checkbox style */
+  .check-box {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  /* Select and date input styles */
+  .optionselectinput,
+  .startdateenddate {
+    width: 100%;
+    border-radius: 5px;
+    padding: 7px;
+    border: 1px solid gray;
+    color: gray;
+    font-size: 14px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .optionselect {
+    font-size: 15px;
+    color: gray;
+  }
+  
+  /* Buttons styling */
+  .btn-container {
+    text-align: center;
+  }
+  
+  .next-btn, .reset-btn {
+    width: 40%;
+    max-width: 150px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .next-btn {
+    background-color: #fc7f37;
+  }
+  
+  .reset-btn {
+    background-color: #ea5455;
+  }
+  
+  .next-btn:hover, .reset-btn:hover {
+    box-shadow: 0 6px 8px rgba(247, 64, 9, 0.3);
+  }
+  
+  /* Scroll-top button style */
+  .scroll-top-container {
+    text-align: end;
+  }
+  
+  .scroll-top-btn {
+    border: none;
+    border-radius: 5px;
+    background-color: #fc7f37;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .scroll-icon {
+    color: white;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .mandateregistrationformheading h1 {
+      font-size: 20px;
+    }
+  
+    .mandate-input-container label {
+      font-size: 12px;
+    }
+  
+    .optionselectinput,
+    .startdateenddate,
+    .mandateinput {
+      font-size: 13px;
+      padding: 5px;
+    }
+  
+    .next-btn, .reset-btn {
+      width: 60%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .btn-container{
+      align-items: center;
+  
+    }
+    .next-btn, .reset-btn {
+      width: 80%;
+      
+    }
+    .scroll-top-container{
+        align-items: end;
+    }
+    .scroll-top-btn {
+      width: 35px;
+      height: 35px;
+    }
+  }

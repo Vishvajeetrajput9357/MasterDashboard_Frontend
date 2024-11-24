@@ -1,0 +1,233 @@
+/* Existing styles - unchanged */
+/* .userheading, .userinfo-container, .userinfoimage, .userimage, .maincontent, .userinfoform, .userinfolable, .userinfo-form, .userinfoinput, .submit-button, .userinfoinput::placeholder */
+/* Your existing CSS goes here */
+
+.userheading {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: gray;
+    letter-spacing: 1px;
+}
+
+.userinfo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.userinfoimage {
+    text-align: center;
+}
+
+.userimage {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.maincontent {
+    box-shadow: 0 6px 8px rgba(247, 64, 9, 0.3);
+    border-radius: 5px;
+    width: 30%;
+    margin-left: 100px;
+}
+
+.userinfoform {
+    text-align: center;
+    /* margin-top: 10px; */
+}
+
+.userinfolable {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: gray;
+    font-size: 15px;
+    margin-left: 10px;
+    letter-spacing: 1px;
+}
+
+.userinfo-form {
+    margin: 5px;
+}
+
+.userinfoinput {
+    width: 95%;
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid #d8d6de;
+    letter-spacing: 1px;
+}
+
+.userinfoinput:focus {
+    outline: none;
+    border-color: #f59e0b;
+}
+
+.submit-button {
+    display: block;
+    margin: 10px auto;
+    padding: 5px;
+    width: 30%;
+    border: none;
+    background-color: #f59e0b;
+    border-radius: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    font-size: large;
+    letter-spacing: 1px;
+}
+
+.submit-button:hover{
+    box-shadow: 0 6px 8px rgba(247, 64, 9, 0.3); 
+
+}
+
+.userinfoinput::placeholder {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 13px;
+}
+
+/* Style the select dropdown (applies to .userinfoinput as a select) */
+.optionselect {
+    width: 95%;
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid #d8d6de;
+    background-color: white; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: gray; 
+    cursor: pointer;
+    font-size: 13px;
+    
+
+}
+
+.optionselect:focus{
+    border-color: #f59e0b;
+}
+
+/* Style the dropdown arrow */
+.optionselect::after {
+    position: absolute;
+    right: 10px;
+    color: #d8d6de;
+    pointer-events: none;
+        
+    
+}
+
+/* To adjust color and font for options */
+.optionselect option {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: gray; /* Text color of options */
+    background-color: #ffffff; /* Background color of options */
+    padding: 8px; /* Padding within options */
+    border-color: #f59e0b;
+    
+}
+
+/* Hover effect for option items if supported */
+.optionselect option:hover {
+    background-color: #f59e0b; /* Highlight color when hovering */
+    color: #fff; /* Text color when hovering */
+    
+}
+
+
+/* Responsive Styles */
+
+/* For tablets and medium screens */
+@media (max-width: 950px) {
+    .userimage {
+     display: none;
+    }
+    .userinfo-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .maincontent {
+        width: 70%;
+        margin-left: 0;
+    }
+
+    .userinfoinput {
+        width: 80%;
+    }
+
+    .submit-button {
+        width: 20%;
+    }
+
+    .userinfolable {
+        margin-left: 60px;
+        /* text-align: center; */
+    }
+    .optionselect {
+        font-size: 16px;
+        color: gray;
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .userinfo-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .maincontent {
+        width: 70%;
+        margin-left: 0;
+    }
+
+    .userinfoinput {
+        width: 80%;
+    }
+
+    .submit-button {
+        width: 20%;
+    }
+
+    .userinfolable {
+        margin-left: 50px;
+        /* text-align: center; */
+    }
+    .optionselect {
+        font-size: 16px;
+        color: gray;
+        width: 80%;
+    }
+}
+
+/* For mobile and small screens */
+@media (max-width: 480px) {
+    .userinfo-container {
+        height: auto;
+        padding: 10px;
+        margin-top: 50px;
+    }
+
+    .maincontent {
+        width: 90%;
+        margin-left: 0;
+    }
+
+    .userinfoinput {
+        width: 90%;
+    }
+
+    .submit-button {
+        width: 30%;
+        font-size: medium;
+    }
+
+    .userinfolable {
+        margin-left: 20px;
+        /* text-align: center; */
+    }
+    .optionselect {
+        font-size: 16px;
+        color: gray;
+        width: 90%;
+    }
+}

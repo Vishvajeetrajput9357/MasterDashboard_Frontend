@@ -1,0 +1,246 @@
+/* body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+} */
+
+.sidebar {
+  position: fixed;
+  width: 250px;
+  height: 100%;
+  background-color: white;
+  padding-top: 20px;
+  color: #333;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
+
+.sidebar-logo img {
+  width: 70px;
+  height: 50px;
+  margin: 0 auto;
+  display: block;
+}
+
+.Dashboard-headind {
+  /* text-align: center; */
+  color: gray;
+  margin: 10px;
+  letter-spacing: 1px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 18px;  
+
+}
+.dashboard-icon{
+  margin-right: 8px;
+  margin-bottom: 6px;
+}
+
+.sidebar-link {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.link-item a {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  color: rgb(105, 104, 104);
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.AnkarTag.active {
+  background-color: #f59e0b;
+  color: white;
+}
+
+.link-item a span {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.link-item a:hover span {
+  transform: translateX(5px);
+}
+
+.icon-link {
+  margin-right: 10px;
+  width: 5%;
+}
+
+
+/* Media Queries for Responsiveness */
+
+/* For Tablets and Above (768px and above) */
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 200px; /* Reduce sidebar width for smaller screens */
+  }
+
+  .sidebar-logo img {
+    width: 50px;  /* Make logo smaller */
+    height: 40px;
+  }
+
+  h2 {
+    font-size: 18px;  /* Reduce heading size */
+  }
+
+  .link-item a {
+    font-size: 14px; /* Smaller font size for links */
+  }
+}
+
+/* For Mobile Devices (480px and below) */
+@media screen and (max-width: 480px) {
+  .sidebar {
+    width: 100%;
+    height: 100%; /* Full width sidebar */
+    transform: translateX(-100%);  /* Hide sidebar by default */
+    position: fixed;
+  }
+
+  .sidebar.open {
+    transform: translateX(0);  /* Show sidebar */
+  }
+
+  .sidebar-logo img {
+    width: 40px; /* Make logo smaller */
+    height: 30px;
+  }
+
+  h2 {
+    font-size: 16px; /* Smaller heading */
+    margin: 10px;
+  }
+
+  .link-item a {
+    font-size: 12px;  /* Smaller font size for mobile */
+    padding: 8px;     /* Adjust padding for smaller screens */
+  }
+
+  .icon-link {
+    width: 8%;  
+  }
+
+  .sidebar-logo {
+    text-align: left;
+    padding-left: 15px;
+  }
+  
+  
+}
+
+.sidebar-toggle-btn {
+  display: none;  
+}
+
+
+  
+
+@media screen and (max-width: 480px) {
+  .sidebar-toggle-btn {
+    display: block;  
+    /* position: absolute; */
+    top: 15px;
+    left: 15px;
+    background-color: #f59e0b;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    align-items: start;
+    text-align: start;
+    font-size: 25px;
+  }
+ 
+
+  
+}
+
+
+
+
+
+/* For Mobile Devices (480px and below) */
+@media screen and (max-width: 780px) {
+  .sidebar {
+    width: 100%;
+    height: 100%; /* Full width sidebar */
+    transform: translateX(-100%);  /* Hide sidebar by default */
+    position: fixed;
+  }
+
+  .sidebar.open {
+    transform: translateX(0);  /* Show sidebar */
+  }
+
+  .sidebar-logo img {
+    width: 40px; /* Make logo smaller */
+    height: 30px;
+  }
+
+  h2 {
+    font-size: 16px; /* Smaller heading */
+    margin: 10px;
+  }
+
+  .link-item a {
+    font-size: 12px;  /* Smaller font size for mobile */
+    padding: 8px;     /* Adjust padding for smaller screens */
+  }
+
+  .icon-link {
+    width: 8%;  
+  }
+
+  .sidebar-logo {
+    text-align: left;
+    padding-left: 15px;
+  }
+  
+}
+
+.sidebar-toggle-btn {
+  display: none;  
+}
+.sidebar-logo img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%; /* Make it circular */
+  object-fit: cover;
+}
+
+
+@media screen and (max-width: 780px) {
+  .sidebar-toggle-btn {
+    display: block;
+    position: fixed;
+    top: 36px;
+    left: 25px;
+    background-color: whitesmoke;
+    color: rgb(92, 87, 87);
+    /* padding: 10px; */
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    z-index: 1100; /* Above sidebar */
+    border-radius: 5px;
+  }
+  
+
+
+  
+}
+
+@media screen and (max-width: 780px) {
+  .sidebar-logo {
+      text-align: left;
+      padding-left: 2px;
+  }
+}

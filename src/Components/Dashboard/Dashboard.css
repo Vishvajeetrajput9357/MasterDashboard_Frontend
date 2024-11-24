@@ -1,0 +1,135 @@
+
+
+
+/* Container styling */
+
+.container-fluid {
+    padding: 20px;
+    
+    
+  }
+  .row{
+    margin-top: 70px;
+  }
+  
+  /* Username container */
+  .username {
+    background-color: #fc8c4c;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Circle icon container */
+  .usernameimg-conatainer {
+    display: grid;
+    place-items: center; /* Centers the icon both horizontally and vertically */
+    width: 70px;
+    height: 70px;
+    background-color: rgb(248, 101, 48);
+    border-radius: 50%; /* Makes it circular */
+    margin: 0 auto 10px; /* Centers the container within .username */
+  }
+  
+  /* Icon inside the circle */
+  .usernameimg {
+    color: white;
+    font-size: 20px;
+  }
+  
+  /* Text inside the .username */
+  .username label {
+    font-size: 1.2em;
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+  
+  .username p {
+    margin-top: 5px;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  
+  /* Help section */
+  #imagehelp {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+
+  }
+  
+  .helpinfo {
+    margin-bottom: 10px;
+  }
+  
+  .helpimg {
+    width: 50px;
+    max-width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: rgb(241, 223, 223);
+    margin-bottom: 10px;
+  }
+  
+  .helpnumber {
+    font-size: 1.2em;
+    color: #333;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    cursor: pointer;
+    color: rgb(12, 12, 231);
+    font-size: 15px;
+    letter-spacing: 1px;
+
+  }
+  .emailaddress{
+    margin: 5px;
+    letter-spacing: 1px;
+  }
+  .emailaddress a{
+    list-style: none;
+    text-decoration: none;
+    color: rgb(12, 12, 231);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    
+  }
+#imagehelp p{
+    color: rgb(104, 103, 103);
+    font-size: 14px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+.active-link {
+  color: #007bff; /* Highlight color */
+  font-weight: bold;
+  border-bottom: 2px solid #007bff; /* Optional underline */
+}
+
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .usernameimg-conatainer {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .username label, .helpnumber {
+      font-size: 1em;
+    }
+  
+    .helpimg {
+      max-width: 150px;
+    }
+  }
+  
